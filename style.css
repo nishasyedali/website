@@ -1,0 +1,662 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f9ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    color: #0a3d91;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    background-color: #0a3d91;
+    padding: 15px 0;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    background: linear-gradient(rgba(10, 61, 145, 0.8), rgba(10, 61, 145, 0.8)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #0a3d91;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e3ecff;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background-color: #f0f6ff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* =========================
+   SOCIETIES SECTION
+========================= */
+.services {
+    padding: 60px 0;
+    background-color: #f5f9ff;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.about-features img,
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.hero {
+    height: 90vh;
+    background: linear-gradient(
+        rgba(10, 61, 145, 0.75),
+        rgba(10, 61, 145, 0.75)
+    ),
+    url("alkawthar-logo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #0a3d91;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Banner Image */
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Content Box */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #0a3d91;
+    border-bottom: 2px solid #0a3d91;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background: #0a3d91;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #f4f6fb;
+}
+
+.header { 
+    background: #0a3d91; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.banner img { 
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.container { 
+    width: 80%; 
+    margin: 30px auto; 
+    background: white; 
+    padding: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    flex: 1; /* makes container take remaining space */
+}
+
+h2 { 
+    color: #0a3d91; 
+    border-bottom: 2px solid #0a3d91; 
+    padding-bottom: 5px; 
+}
+
+p { 
+    line-height: 1.6; 
+}
+
+ul { 
+    padding-left: 20px; 
+}
+
+.section-image { 
+    width: 100%; 
+    max-width: 500px; 
+    display: block; 
+    margin: 15px auto; 
+    border-radius: 8px; 
+}
+/* =========================
+   Reset & Base Styles
+========================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #f4f6fb;
+    color: #333;
+}
+
+/* =========================
+   Header
+========================= */
+.header { 
+    background: #0a3d91; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
+
+/* =========================
+   Banner Image
+========================= */
+.banner img { 
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-bottom: 3px solid #0a3d91;
+}
+
+/* =========================
+   Main Container
+========================= */
+.container { 
+    width: 80%; 
+    margin: 30px auto; 
+    background: white; 
+    padding: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    flex: 1; /* take remaining space to push footer down */
+}
+
+h2 { 
+    color: #0a3d91; 
+    border-bottom: 2px solid #0a3d91; 
+    padding-bottom: 5px; 
+    margin-top: 30px;
+}
+
+p { 
+    line-height: 1.6; 
+    margin-top: 10px;
+}
+
+ul { 
+    padding-left: 20px; 
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* =========================
+   Section Images
+========================= */
+.section-image { 
+    width: 100%; 
+    max-width: 500px; 
+    display: block; 
+    margin: 15px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   Foote
+/* =========================
+   Back to Home Button
+========================= */
+.back-home {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #0a3d91;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #0a3d91;
+    transition: all 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #0a3d91;
+    color: white;
+}
+/* =========================
+   Reset & Base Styles
+========================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #f4f6fb;
+    color: #333;
+}
+
+/* =========================
+   Header
+========================= */
+.header { 
+    background: #0a3d91; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
+
+/* =========================
+   Banner Image
+========================= */
+.banner img { 
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-bottom: 3px solid #0a3d91;
+}
+
+/* =========================
+   Main Container
+========================= */
+.container { 
+    width: 80%; 
+    margin: 30px auto; 
+    background: white; 
+    padding: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    flex: 1; /* take remaining space to push footer down */
+}
+
+h2 { 
+    color: #0a3d91; 
+    border-bottom: 2px solid #0a3d91; 
+    padding-bottom: 5px; 
+    margin-top: 30px;
+}
+
+p { 
+    line-height: 1.6; 
+    margin-top: 10px;
+}
+
+ul { 
+    padding-left: 20px; 
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* =========================
+   Section Images
+========================= */
+.section-image { 
+    width: 100%; 
+    max-width: 500px; 
+    display: block; 
+    margin: 15px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* =========================
+   Back to Home Button
+========================= */
+.back-home {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #0a3d91;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #0a3d91;
+    transition: all 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #0a3d91;
+    color: white;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #ff6600;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6600;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
